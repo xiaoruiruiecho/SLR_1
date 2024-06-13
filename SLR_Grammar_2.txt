@@ -1,0 +1,17 @@
+S  -> A
+
+A  -> id = E | L
+
+L  -> L || R | R
+
+R  -> R && B | B
+
+B  -> E < E | E > E | E <= E | E >= E | E == E | E != E | E
+
+E  -> E + T | E - T | T
+
+T  -> T * F | T / F | F
+
+F  -> ( E ) | id | num
+
+C  -> E , C | E
